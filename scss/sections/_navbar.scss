@@ -1,0 +1,20 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 76px;
+}
+
+.menu {
+    @include gradient;
+
+    li {
+        padding: 0 0.7rem;
+        a {
+            color: $white !important;
+            text-decoration: capitalize;
+            font-weight: 600;
+        }
+    }
+}
